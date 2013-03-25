@@ -7,7 +7,7 @@
     <ignored path="h-ceo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="babb523d-9bfa-431b-8f65-a5e8efe3cc19" time="1364200628015" ignored="false" />
-    <file path="/index.html" changelist="babb523d-9bfa-431b-8f65-a5e8efe3cc19" time="1364201990137" ignored="false" />
+    <file path="/index.html" changelist="babb523d-9bfa-431b-8f65-a5e8efe3cc19" time="1364202303859" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="467" column="58" selection-start="17041" selection-end="17041" vertical-scroll-proportion="0.0049751243">
+            <state line="653" column="22" selection-start="23668" selection-end="23668" vertical-scroll-proportion="0.60199004">
               <folding>
                 <element signature="n#style#0;n#a#0;n#header#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#header#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,27 +42,12 @@
                 <element signature="n#style#0;n#a#0;n#header#0;n#div#10;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#header#0;n#div#11;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#13;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#header#0;n#div#14;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#header#0;n#div#15;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#17;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="library-detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library-detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="20" selection-start="712" selection-end="2130" vertical-scroll-proportion="-24.818182">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="library.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="54" selection-start="547" selection-end="610" vertical-scroll-proportion="13.090909">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -306,23 +291,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library.html">
+    <entry file="file://$PROJECT_DIR$/activity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="547" selection-end="610" vertical-scroll-proportion="13.090909">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="712" selection-end="2130" vertical-scroll-proportion="-24.818182">
+        <state line="214" column="0" selection-start="6739" selection-end="7162" vertical-scroll-proportion="-4.4545455">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="467" column="58" selection-start="17041" selection-end="17041" vertical-scroll-proportion="0.0049751243">
+        <state line="653" column="22" selection-start="23668" selection-end="23668" vertical-scroll-proportion="0.60199004">
           <folding>
             <element signature="n#style#0;n#a#0;n#header#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#header#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -334,6 +312,9 @@
             <element signature="n#style#0;n#a#0;n#header#0;n#div#10;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#header#0;n#div#11;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#13;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#header#0;n#div#14;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#header#0;n#div#15;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#17;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
