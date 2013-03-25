@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none !important;}
+a,p{ text-decoration: none; outline: none !important; font-size:14px; -webkit-tap-highlight-color:rgba(0,0,0,0); color:#fff;}
+.btn, button { display:inline-block; font-size:12px; height:30px; line-height:18px; border: none; background-color:#398abd; text-align:center; text-decoration:none; color:#FFFFFF; vertical-align: top;outline: none; -webkit-tap-highlight-color:rgba(0,0,0,0); text-shadow:1px 1px 0 #1270a5; }
+#header{ background:url(img/titlebg.png) left bottom repeat-x;}
+#header .btn.gohome,#header .btn.goback{ margin: 5px 0 5px 10px !important; width: 50px; background:url(img/gohome.png) center center no-repeat; background-size:50px 30px; border:none;}
+#header .btn.gohome img,#header .btn.goback img{padding:5px 12px 5px 18px;}
+#header .btn.gohome.selected,#header .btn.gohome img.selected,#header .btn.goback.selected,#header .btn.goback img.selected{background:url(img/gohome-on.png) center center no-repeat;}
+
+#header .btn.title-number { margin: 5px 10px 0 0 !important; border-left:1px solid #1c87eb; width:60px; float: right; background:url(img/icon_number02.png) 10px center no-repeat; line-height:30px; padding-left:30px; border:none; color:#fff; }
+#header .btn.title-send { margin: 5px 10px 0 0 !important; width:50px; background:url(img/send.png) center center no-repeat; cursor:pointer; float: right; border:none;}
+
+#header .btn.search{ position: static; display: block; float:right; margin:5px 15px 4px; cursor:pointer; background:url(img/iconbg.png) center center no-repeat; background-size:50px 30px; border:none;width:50px; line-height:28px;}
+#header .btn.search img{padding:5px 15px !important;}
+#header .btn.search.selected,#header .btn.search img.selected{background:url(img/iconbg-on.png) center center no-repeat;}
+
+#header .btn.search a{ color:#fff;}
+
+
+/*关于中国医院院长*/
+.about-content{width:100%; height:450px; padding-top:50px !important; background:rgba(4, 66, 100, 1) url(img/appbg.png) center top no-repeat; line-height:24px; text-align:center !important;}
+.about-content .text{ padding-top:120px !important; vertical-align:bottom; text-shadow:1px 1px #044264;}
+
+

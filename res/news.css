@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*往期样式*/
+
+.main{width:100%; height:auto;}
+.news-list-img{width:100%; height:150 !important; padding:0px !important; text-align:center !important; position:relative; z-index:10;}
+.news-list-img img{width:320px; height:150px; /* box-shadow:5px 5px 0px #022032;*/}
+.news-list-img p{ width:100%; height:auto; background:rgba(0,0,0,0.5); font-size:14px; font-weight:bold !important; text-align:left; padding:5px !important; color:#fff; position:absolute; left:0; bottom:3px; z-index:12;}
+
+/*列表样式*/
+.news-list {
+list-style-type: none;
+text-align: left;
+}
+
+.news-list li {
+display: inline-block;
+width: 100%;
+margin:0 !important;
+padding: 5px !important;
+overflow: hidden; 
+border-bottom:1px solid #bbb;
+color:#000 !important;
+background:url(img/s-icon.png) right center no-repeat;
+font-size:12px !important;
+}
+
+.news-list li img{display: inline-block;
+    vertical-align: top;
+		width:80px;
+    height:60px; border:1px solid #bbb !important; margin-right:5px !important;}
+.news-list li p{display: inline-block; width:70%; height:auto; color:#999 !important; padding:0px !important; font-size:12px !important;}
+.news-list li p span{ font-weight:bold; color:#000; font-size:14px; white-space:nowrap;/*不换行样式*/}
+
+
+
+

@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>中国医院院长 - 设置</title>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="Sunday 26 October 2012 01:00 GMT" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="res/icons.css" />
+<link rel="stylesheet" type="text/css" href="res/jq.ui.css?1.0.1" />
+<link rel="stylesheet" type="text/css" href="res/style.css"><!--共用样式-->
+<link rel="stylesheet" type="text/css" href="res/setting.css">
+</head>
+<body>
+<div id="jQUi">
+
+<div id="header"></div>
+<div id="content">
+
+<div id="setting" class="panel" style="background:#f1f1f1;" data-footer="navbar2">
+  <header>
+    <h1>设置</h1>
+  </header>
+  <div class="usercenter-content">
+    <form><fieldset>
+    <ul>
+    <div class="issues-title">系统设置</div>
+      <li><a href="#type-size">文章字号</a></li>
+      <li><a href="#share-setting">分享设置</a></li>
+      <li class="system-setting" style="background:none !important;">
+      	<a href="#system" style="width:180px; background:none !important;">推送设置</a>
+        <span class="checkbox"><input type="checkbox" value="HTML5" id="html5slider" class="jq-ui-slider" />
+        <label for="html5slider">HTML5</label></span>
+      </li>      
+		<div class="issues-title">用户设置</div>
+      <li><a href="#feedback">意见反馈</a></li>
+      <li id="check-version"><a href="#">检测更新</a></li>
+      <li><a onclick="location.href='./leading.html'">帮助中心</a></li>
+      <li><a onclick="location.href='./about.html#about'">关于我们</a></li>
+      <li><a href="#usercenter">个人中心</a></li>
+		<div class="issues-title">账号设置</div>
+      <li><a href="#login">用户登录</a></li>
+      <li><a href="#register">用户注册</a></li>
+      <li><a href="#">新浪微博</a></li>
+      <li><a href="#">腾讯微博</a></li>
+    </ul></fieldset>
+    </form>
+  </div>
+</div>
+<!-- END #setting -->
+
+<div id="type-size" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none">
+  <header>
+    <h1>字体大小设置</h1>
+    <button class="btn goback" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <div class="usercenter-main">
+    	<div class="type-size">
+      	<ul>
+        	<li class="top-radius">特大号字<span><input name="" type="radio" value=""></span></li>
+        	<li>大号字<span><input name="" type="radio" value=""></span></li>
+        	<li>中号字<span><input name="" type="radio" value=""></span></li>
+        	<li class="bottom-radius">小号字<span><input name="" type="radio" value=""></span></li>        
+        </ul>
+      </div>
+  </div>  
+</div>
+<!-- END #type-size 字号大小设置 -->
+
+
+<div id="share-setting" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none">
+  <header>
+    <h1>分享设置</h1>
+    <button class="btn goback" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <div class="usercenter-main">
+    	<div class="type-size">
+      	<ul>
+        	<li class="top-radius"><img class="share-img" src="res/img/weibo.png">分享到新浪微博<span class="share-menu">绑定</span></li>
+        	<li class="bottom-radius"><img class="share-img" src="res/img/qq.png">分享到腾讯微博<span class="share-menu">绑定</span></li>        
+        </ul>
+      </div>
+  </div>  
+</div>
+<!-- END #share-setting 分享设置 -->
+
+<div id="feedback" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none">
+  <header>
+    <h1>用户反馈</h1>
+    <button class="btn goback" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <div class="usercenter-main">
+    <ul>
+      <li class="feedback">
+        <textarea name="content" rows="6" id="Content"  onfocus="if(this.value=='留下您的宝贵意见，我们将持续改进产品（最多不能超过200字）') {this.value='';}" onblur="if(this.value=='') {this.value='留下您的宝贵意见，我们将持续改进产品（最多不能超过200字）';}">留下您的宝贵意见，我们将持续改进产品（最多不能超过200字）</textarea>
+      </li>
+      <li class="feedback">
+        <input type="text" id="mail" name="mail" value="请输入您的邮箱" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入您的邮箱':null;"/>
+      </li>
+    </ul>
+    <div class="login-submit">
+    <input type="submit" value="提交" id="feedbackSubmit">
+  	</div>
+  </div>  
+</div>
+<!-- END #feedback -->
+
+<div id="login" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none" >
+  <header>
+    <h1>登录</h1>
+    <button class="btn goback" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+    <a href="#register" class="btn search" data-transition="up">注册</a>
+  </header>
+  <div class="usercenter-main">
+    <div class="type-size">
+      <ul>
+        <li class="top-radius login"><input type="text" id="username" name="username" class="jq-ui-forms" value="请输入用户名或者邮箱" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入用户名或者邮箱':null;"/></li>
+        <li class="bottom-radius login"><!-- <input type="text" id="password" name="passwd" class="jq-ui-forms" value="请输入密码" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入密码':null;"/> -->
+          <input id="password" class="jq-ui-forms" type="text"  value="请输入密码" onFocus="login_pass_1()" />
+          <input id="login_password" class="jq-ui-forms" type="password" name="password" style="display:none;" onBlur="login_pass_2()" />
+        </li>
+      </ul>
+    </div>
+    <div class="auto-login"><input name="" type="checkbox" value="">下次自动登录</div>
+    <div class="login-submit"><input class="input" type="submit" value="登录" id="loginSubmit"></div>
+  </div>
+</div>
+<!-- END #login-->
+
+<div id="register" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none">
+  <header>
+    <h1>用户注册</h1>
+    <button class="btn gohome" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+    <a href="#login" class="btn search" data-transition="down">登陆</a>
+  </header>
+  <div class="usercenter-main">
+    <div class="type-size">
+      <ul>
+        <li class="top-radius login"><input type="text" id="re_username" name="username" class="jq-ui-forms" value="请输入用户名" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入用户名':null;"/></li>
+        <li class="login"><input type="text" id="re_email" name="email" class="jq-ui-forms" value="请填写邮箱" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请填写邮箱':null;"/></li>
+        <li class="login"><input type="password" id="re_password" name="passwd" class="jq-ui-forms" value="请输入密码" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入密码':null;"/></li>
+        <li class="bottom-radius login"><input type="password" id="re_reg_password" name="passwd" class="jq-ui-forms" value="请输入确认密码" onfocus="this.value==this.defaultValue?this.value='':null;" onblur="this.value==''?this.value='请输入确认密码':null;"/></li>
+      </ul>
+    </div>
+    <!--<div class="auto-login"><input name="" type="checkbox" checked="checked">已经阅读注册条款</div>-->
+    <div class="login-submit"><input class="input" type="submit" value="确认注册" id="registerSubmit"></div>
+  </div>
+</div>
+<!-- END #register -->
+
+
+<div id="usercenter" class="panel issues-detail-bg" style="overflow:hidden;" data-footer="none">
+  <header>
+    <h1>个人中心</h1>
+    <button class="btn gohome" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+    <a id="loginout" class="btn search">注销</a>
+    <!-- <a href="#login" class="btn search" data-transition="up">登录</a> -->
+  </header>
+
+  <div class="usercenter-main">
+    	<div class="type-size my-center">
+      	<ul>
+        	<li class="top-radius"><a href="#my-collection">我的收藏</a></li>
+        	<li><a href="#my-comment">我的评论</a></li>
+        	<li class="bottom-radius"><a href="#my-subscription">我的订阅</a></li>        
+        </ul>
+      </div>
+  </div>  
+
+</div>
+<!-- END #usercenter -->
+
+<div id="my-collection" class="panel" data-footer="none">
+  <header>
+    <h1>我的收藏</h1>
+    <button class="btn gohome" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <!-- END customer header -->  
+<div class="main">
+  <div class="news-list">      	
+    <ul>
+      <li><a href="#news-detail">
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日院长杂志－出版日期：12月1日院长杂志
+        </p></a>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日院长杂志－出版日期：12月1日院长杂志
+        </p>
+      </li>
+    </ul>
+    <div class="load-more"><p>查看更多</p></div>
+    <div class="current"><p><img src="res/img/loading.gif"><span>查看更多</span></p></div>
+  </div>
+</div>
+</div>
+<!--END 我的收藏 my-collection-->
+
+<div id="my-comment" class="panel" data-footer="none">
+  <header>
+    <h1>我的评论</h1>
+    <button class="btn gohome" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <!-- END customer header -->  
+<div class="main">
+  <div class="news-list">      	
+    <ul>
+      <li><a href="#news-detail">
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日院长杂志－出版日期：12月1日院长杂志
+        </p></a>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日
+        </p>
+      </li>
+      <li>
+        <img src="res/img/3.jpg">
+        <p>
+          <span>人文鼓楼<br></span>
+          院长杂志－出版日期：12月1日院长杂志－出版日期：12月1日院长杂志
+        </p>
+      </li>
+    </ul>
+    <div class="load-more"><p>查看更多</p></div>
+    <div class="current"><p><img src="res/img/loading.gif"><span>查看更多</span></p></div>
+  </div>
+</div>
+</div>
+<!--END 我的评论 my-comment-->
+
+<div title='我的订阅' id="my-subscription" class="panel" data-footer="none">
+  <header>
+    <h1>我的订阅</h1>
+    <button class="btn gohome" onclick="javascript:$.ui.goBack();"><img src="res/img/goback.png"></button>
+  </header>
+  <!-- END customer header -->  
+  <div class="main">
+    <div class="magazine-list">      	
+      <ul>
+        <li>
+          <img src="res/img/1.jpg">
+          <p>
+            <span>单期<br></span>
+            <b>单价：20元</b><br />
+            院长杂志－出版日期出版日期出版日期出版日日院长
+            <span><a class="subscription" href="#subscription">订阅</a></span>
+          </p>        
+        </li>
+        <li>
+          <img src="res/img/2.jpg">
+          <p>
+            <span>半年印刷版<br></span>
+            <b>单价：240元</b><br/>
+            院长杂志－出版日期出版日期出版日期出版日期院长
+            <span><a class="subscription" href="#subscription">订阅</a></span>
+          </p>
+        </li>          
+        <li>
+          <img src="res/img/3.jpg">
+          <p>
+            <span>一年印刷版<br></span>
+            <b>单价：480元</b><br/>
+            院长杂志－出版日期出版日期出版日期出版日期院长
+            <span><a class="subscription" href="#subscription">订阅</a></span>
+          </p>
+        </li>          
+      </ul>
+    </div>
+  </div>
+</div>
+<!--END 我的订阅my-subscription -->
+</div>
+
+<!-- navbar -->
+<div id="navbar2" style="margin:0; float:left;" data-position="fixed">
+  <a onclick="location.href='./issues.html'">杂志<br/><span>issues</span></a>
+  <a onclick="location.href='./library.html'">往期<br/><span>library</span></a>
+  <a onclick="location.href='./news.html'">资讯<br/><span>news</span></a>
+  <a onclick="location.href='./activity.html'">活动<br/><span>activity</span></a>
+  <a onclick="location.href='./recommend.html'">推荐<br/><span>recommend</span></a>
+</div>
+
+
+</div>
+
+<script type="text/javascript" charset="utf-8" src="js/jq.mobi.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jq.ui.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./init.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+
+/*杂志列表和头部图片*/
+.main{width:100%; height:auto;}
+.issues-list-img{width:100%; height:210px !important; padding:20px !important;}
+.issues-list-img img{width:130px; height:170px; float:left; box-shadow:5px 5px 0px #022032;}
+.issues-list-img p{ width:150px; height:170px; padding-left:20px !important; float:left; line-height:24px !important; font-weight:bold !important;color:#ccc; text-shadow:1px 1px #022032;}
+.issues-list-img p span{font-size:16px; color:#fff !important;}
+
+/*推荐列表样式*/
+.project-title{ width: 100%; display: block; text-transform:capitalize; font-weight:bold; line-height: 20px; text-indent: 12px; color: #fff; background:-webkit-gradient(linear, 0 100%, 0 0, from(#999), to(#aaa)); text-shadow:1px 1px #333;}
+
+
+.book-list {
+list-style-type: none;
+text-align: left;
+}
+
+.book-list li { position:relative;
+display: inline-block;
+width: 100%;
+margin:0 !important;
+padding: 10px !important;
+overflow: hidden; 
+border-bottom:1px solid #bbb;
+color:#000 !important;
+background:#fff url(img/s-icon.png) right center no-repeat;
+font-size:12px !important;
+}
+
+.book-list li img{display: inline-block;
+    vertical-align: top;
+		width:50px;
+    height:60px; border:0px solid #bbb !important; border-radius:0px; margin-right:10px !important;}
+.book-list li p{display: inline-block; width:75%; height:auto; color:#999 !important; padding:0px !important; font-size:12px !important;}
+.book-list li p span{ font-weight:bold; color:#000; font-size:14px; white-space:nowrap;/*不换行样式*/}
+
+
+/*杂志列表*/
+.magazine-list {
+list-style-type: none;
+text-align: left;
+}
+
+.magazine-list li { position:relative;
+display: inline-block;
+width: 100%;
+margin:0 !important;
+padding: 10px !important;
+overflow: hidden; 
+border-bottom:1px solid #bbb;
+color:#000 !important;
+background:#fff url(img/s-icon.png) right center no-repeat;
+font-size:12px !important;
+}
+
+.magazine-list li img{display: inline-block;
+    vertical-align: top;
+		width:90px;
+    height:110px; border:0px solid #bbb !important; border-radius:0px;}
+.magazine-list li p{display: inline-block; width:65%; height:auto; padding-top:0px !important; font-size:12px !important;}
+.magazine-list li p span{ font-weight:bold; color:#000; font-size:14px; white-space:nowrap;/*不换行样式*/}
+.magazine-list li p b{ color:#F00 !important;}
+
+
+/*图书列表*/
+.books-list {
+list-style-type: none;
+text-align: left;
+}
+
+.books-list li { 
+width: 100px !important;
+margin:0 !important;
+padding: 10px !important;
+overflow: hidden; 
+color:#000 !important;
+height:auto;
+font-size:12px !important;
+text-align:center !important;
+display:inline-block !important;
+}
+
+.books-list li img{ display:inline-block; 
+    vertical-align: top;
+		width:90px;
+    height:100px; padding-left:5px !important;}
+.books-list li p{  display:inline-block; height:auto; padding-top:0px !important; font-size:12px !important;}
+.books-list li p span{ color:#000; white-space:nowrap;/*不换行样式*/}
+.books-list li p b{ color:#F00 !important;}
+
+/*订阅杂志成功页面*/
+.success-list {
+list-style-type: none;
+text-align: left;
+
+}
+
+.success-list li { position:relative;
+display: inline-block;
+width: 100%;
+margin:0 !important;
+padding: 20px !important;
+overflow: hidden; 
+}
+
+.success-list li img{display: inline-block;
+    vertical-align: top;
+		width:150px;
+    height:140px; border:0px solid #bbb !important; padding-left:30px !important; border-radius:0px;}
+.success-list li p{display: inline-block; width:45%; height:auto; padding-top:30px !important; font-size:12px !important;}
+.success-list li p span{ font-weight:bold; color:#000; font-size:14px; white-space:nowrap;/*不换行样式*/}
+.success-list li p b{ color:#F00 !important;}
+.success-text{ font-size:22px !important; line-height:40px; text-align:center; color:#F00 !important; }
+
+
+/*订阅按钮*/
+.subscription{position: static; display: block; padding:0 20px !important; float:left; margin:5px 0px 0 !important; cursor:pointer; 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #eee), color-stop(50%, #ddd), color-stop(50%, #ddd), color-stop(100%, #eee));
+  background: -webkit-linear-gradient(top, color-stop(20%, #eee), color-stop(50%, #ddd), color-stop(50%, #ddd), color-stop(100%, #eee));
+  background: linear-gradient(to bottom, color-stop(20%, #eee), color-stop(50%, #ddd), color-stop(50%, #ddd), color-stop(100%, #eee));
+ 	border:1px solid #ccc; border-radius:4px; width:auto; color:#C00; line-height:20px; font-size:12px !important; font-weight:normal !important;}
+.subscription.selected{	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ddd), color-stop(50%, #eee), color-stop(50%, #eee), color-stop(100%, #ddd));
+  background: -webkit-linear-gradient(top, color-stop(20%, #ddd), color-stop(50%, #eee), color-stop(50%, #eee), color-stop(100%, #ddd));
+  background: linear-gradient(to bottom, color-stop(20%, #ddd), color-stop(50%, #eee), color-stop(50%, #eee), color-stop(100%, #ddd));
+	color:#369;
+}
+
+
+.job-content{width:100%; margin:0px auto !important;  padding:0px !important; background:#fff;}
+.job-content ul > li { margin-bottom:0px !important; padding:0 10px !important;}
+.job-content ul li.topname{ background:-webkit-gradient(linear, 0 100%, 0 0, from(#eee), to(#fff)) !important; line-height:40px; color:#333; padding-left:10px !important; font-weight:bold;}
+.job-content ul li a span{ text-align:right;float:right; font-size:12px; padding:0 10px !important;}
+.job-content ul > li {
+  display: block;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  background:none;
+  border-bottom:1px solid #ddd;
+}
+.job-content ul > li > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 8px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+}
+.job-content ul > li > a:after {
+  content: "";
+  position: absolute;
+  font-size: 12px;
+  right: 25px;
+}
+
+.resume-edit-left{ text-align:left !important; width:80px !important; display:inline-block; font-size:14px;}
+.resume-edit{ width:160px !important; text-align:left !important; vertical-align:top; display:inline-block; font-size:14px; font-weight:bold;}
+.resume-edit input{padding:2px !important;width:165px !important; color:#333 !important; line-height:15px; margin:0px !important; display:inline-block !important;-webkit-border-radius: 4px;
+  border: solid 1px #eee;border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(180, 180, 180, 0.20000000000000004);
+  box-shadow: inset 1px 1px 2px rgba(180, 180, 180, 0.20000000000000004);}
+.resume-edit textarea{width:165px; min-height:100px; background:#fff; border: solid 1px #eee;
+  -webkit-border-radius: 4px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(180, 180, 180, 0.20000000000000004);
+  box-shadow: inset 1px 1px 2px rgba(180, 180, 180, 0.20000000000000004);
+  padding:2px !important;}
+.resume-edit select{width:165px !important;}
+.money{ color:#F00;}
+.note a{ font-size:12px !important; text-align:center; text-decoration: underline !important; color:#09C;}
+.nav{width:100%; line-height:40px; color:#fff; text-align:center; margin:10px auto 20px !important; font-size:14px; border-radius:5px;  color:#fff;background:-webkit-gradient(linear, 0 100%, 0 0, from(#045272), to(#1ba4de));box-shadow: 0px 1px #17a8e5 inset; border:1px solid #045272;}
+.nav h4.selected{ background-image:none; border-radius:5px; background:-webkit-gradient(linear, 0 100%, 0 0, from(#1ba4de), to(#045272));box-shadow: 0px 1px #045272 inset; }
+.nav a{color:#fff; }
+
+/*应用 apply 下载列表样式*/
+.apply-list {
+list-style-type: none;
+text-align: left;
+}
+
+.apply-list li { position:relative;
+display: inline-block;
+width: 100%;
+margin:0 !important;
+padding: 10px !important;
+overflow: hidden; 
+border-bottom:1px solid #bbb;
+color:#000 !important;
+background:#fff url(img/down.png) right center no-repeat;
+background-size:35px 35px;
+font-size:12px !important;
+}
+
+.apply-list li img{display: inline-block;
+    vertical-align: top;
+		width:50px;
+    height:50px; border:0px solid #bbb !important; border-radius:8px; margin-right:10px !important;}
+.apply-list li p{display: inline-block; width:75%; height:auto; color:#999 !important; padding:0px !important; font-size:12px !important;}
+.apply-list li p span{ font-weight:bold; color:#000; font-size:14px; white-space:nowrap;/*不换行样式*/}
+
+

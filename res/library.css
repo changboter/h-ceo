@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*往期样式*/
+
+.main{width:100%; height:auto;}
+.library-list-img{width:100%; height:210px !important; padding:20px !important; text-align:center !important; background:url(img/bookbg.png) center bottom no-repeat;}
+.library-list-img img{width:130px; height:170px;/* box-shadow:5px 5px 0px #022032;*/}
+
+
+/*杂志和往期的样式－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.issues-header-logo{width:75% !important; display:inline-block; text-align: right !important;}
+
+.issues-img{width:100%; height:100%; padding:40px 50px !important;}
+.issues-img li{width:100% !important; margin:0 auto; text-align:center !important; background:rgba(14, 100, 140,0.3) !important; border-radius:8px; border:1px solid #155d82; box-shadow: 1px 1px 4px 2px #4b8aac inset; padding:20px 30px !important;}
+.issues-img li img{display:block; width:100% !important;}
+.issues-img li p{display:block; width: 100%; margin: 0; padding:0 !important; padding-top:10px !important; height:auto; color:#bad1df;}
+.issues-img li p strong{ font-size:14px !important; color:#fff;}
+
+/*杂志列表和头部图片*/
+.main{width:100%; height:auto;}
+.issues-list-img{width:100%; height:210px !important; padding:20px !important;}
+.issues-list-img img{width:130px; height:170px; float:left; box-shadow:5px 5px 0px #022032;}
+.issues-list-img p{ width:150px; height:170px; padding-left:20px !important; float:left; line-height:24px !important; font-weight:bold !important;color:#ccc; text-shadow:1px 1px #022032;}
+.issues-list-img p span{font-size:16px; color:#fff !important;}
+
+/*列表样式*/
+.issues-list {
+margin-top: 2em;
+padding: 0;
+list-style-type: none;
+text-align: left;
+}
+
+.issues-list li {
+display: inline-block;
+width: 100%;
+vertical-align: top;
+margin:0 !important;
+padding: 8px !important;
+overflow: hidden; 
+border-bottom:1px solid #045272;
+color:#fff !important;
+background:url(img/s-icon.png) right center no-repeat;
+}
+.issues-list li span{ color:#ccc !important; font-size:12px !important;}
+
+.issues-list li:after{    
+content: "";
+vertical-align:bottom;
+}
+.issues-list li a{
+display: inline-block;
+overflow: hidden;color:#fff !important;
+}
+
+/*杂志和往期的详细页面样式*/
+.issues-detail-bg{ background:#eee url(img/detail-bg.png) center bottom no-repeat !important; background-size:340px 320px !important; position:fixed;}
+.issues-detail-main{ background:none !important;}
+.issues-detail-main h1{width:100%; font-weight:bold; height:auto; padding:20px 0 !important; text-align:center; text-shadow:1px 1px #ccc !important; font-size:18px; color:#333 !important;}
+.issues-detail-main p{ text-indent:30px;}
+.issues-detail-main img{ text-align:center !important; width:50%; margin:0 18% !important; height:auto;}
+.times{width:100% !important; height:auto; text-align:center !important; color:#999;}
+
+/*杂志和往期的样式－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/

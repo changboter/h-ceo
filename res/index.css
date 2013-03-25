@@ -1,0 +1,20 @@
+body { width: 100%; height: 100%; margin:0; background:rgba(4, 66, 100, 1);}
+a { text-decoration: none; color: white; outline: none; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/*start*/
+#start{width:320px; height:430px; padding-top:50px !important; margin:0 auto; background:rgba(4, 66, 100, 1) url(img/appbg.png) center top no-repeat; text-align:center !important;}
+#start .text{ padding-top:160px !important; vertical-align:bottom; font-size:12px; color:#fff !important; text-shadow:1px 1px #1176aa;}
+
+@media only screen and (max-width:360px), only screen and (max-device-width:360px){
+   .leading-content{width:100%; height:500px !important; padding-top:60px !important; background:rgba(1, 28, 49, 1) url(img/start1.png) center top no-repeat; line-height:24px; text-align:center !important;}
+}
+@media only screen and (max-width:320px), only screen and (max-device-width:320px){
+   .leading-content{width:100%; height:480px !important; background:rgba(255, 255, 255, 1); padding-top:0px !important; line-height:24px; text-align:center !important;}
+}
+#carousel-box { position: relative; width: 100%; height: 470px; padding:0px !important;}
+#carousel-dots {z-index: 200; margin:0 auto !important; text-align:center !important;}
+#carousel-dots div{ float:none !important; display:inline-block !important;width:10px !important;}
+.leading-text{width:100% !important; color:#333; height:auto; margin-top:10px !important; display:block; padding:10px 0 !important; text-align:center !important; font-size:12px; line-height:20px;}
+.leading-text span{ font-size:18px; font-weight:bold; letter-spacing:2px;}
+#carousel-box div{ text-align:center;}
+.leading-text p{width:100px !important; padding:5px 20px !important; margin:0 auto !important;color:#fff; font-size:12px !important;}

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <title>中国医院院长</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="Sunday 26 October 2012 01:00 GMT" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" type="text/css" href="res/icons.css" />
+  <link rel="stylesheet" type="text/css" href="res/jq.ui.css?1.0.1" />
+  <link rel="stylesheet" type="text/css" href="res/index.css">
+</head>
+<body>
+<div id="jQUi" style="background:rgba(1, 28, 49, 1);">
+
+  <div id="header"></div>
+  <div id="content">
+	<div class='container'>
+    <div id="leading" class="panel" style="overflow:hidden;" data-footer="none">
+      <header>
+        <h1>院长杂志</h1>
+      </header>
+      <div class="leading-content">
+        <div id="carousel-box">
+          <div id="carousel">
+            <div> <img src="res/img/leading-1.png" alt=""><span class="leading-text"><span>视觉.交互.全面升级</span><br/>为您奉上"视觉、交互"双重盛宴</span></div>
+            <div> <img src="res/img/leading-2.png" alt=""><span class="leading-text"><span>维修案例</span><br/>推荐信息，方便、迅速</span></div>
+            <div> <img src="res/img/leading-3.png" alt=""><span class="leading-text"><span>维修资料</span><br/>为您奉上您所需的内容</span></div>
+            <div> <img src="res/img/leading-4.png" alt=""><span class="leading-text"><span>技术求助</span><br/><p class="go">马上体验</p></span></div>
+          </div>
+          <div id="carousel-dots"></div>
+        </div><!-- END 图片切换 -->
+      </div>
+
+    </div>
+    <!-- END #about -->
+		</div>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8" src="js/jq.mobi.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jq.ui.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jq.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="./init.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $.ui.ready(
+          function(){
+            $.ui.toggleHeaderMenu(false); //force hide
+          }
+  );
+</script>
+
+</body>
+</html>
