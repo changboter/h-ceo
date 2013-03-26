@@ -188,7 +188,7 @@
     <div title='资讯' id="news-list" class="panel" data-footer="navbar2">
       <header>
         <h1>资讯</h1>
-        <a id='menubadge' onclick="location.href='./setting.html';" style='float:right;margin-top:0px' class='menuButton'></a>
+        <a id='menubadge' href="#setting" style='float:right;margin-top:0px' class='menuButton'></a>
       </header>
       <!-- END customer header -->
       <div class="main">
@@ -252,7 +252,7 @@
     <div title='往期' id="library-main" class="panel" data-footer="navbar2">
       <header>
         <h1>往期</h1>
-        <a id='menubadge' onclick="location.href='./setting.html';" style='float:right;margin-top:0px' class='menuButton'></a>
+        <a id='menubadge' href="#setting" style='float:right;margin-top:0px' class='menuButton'></a>
       </header>
       <!-- END customer header -->
       <div class="main">
@@ -501,7 +501,7 @@
       <header>
         <h1>活动</h1>
         <a class="btn goback" href="javascript:$.ui.goBack();"><img src="res/img/goback.png"></a>
-        <a id='menubadge' onclick="location.href='./setting.html';" style='float:right;margin-top:0px' class='menuButton'></a>
+        <a id='menubadge' href="#setting" style='float:right;margin-top:0px' class='menuButton'></a>
       </header>
       <!-- END customer header -->
       <div class="main">
@@ -619,7 +619,7 @@
     <div title='推荐' id="recommend" class="panel" data-footer="navbar2">
       <header>
         <h1>推荐</h1>
-        <a id='menubadge' onclick="location.href='./setting.html';" style='float:right;margin-top:0px' class='menuButton'></a>
+        <a id='menubadge' href="#setting" style='float:right;margin-top:0px' class='menuButton'></a>
       </header>
       <!-- END customer header -->
       <div class="main">
@@ -1221,7 +1221,7 @@
   <div id="navbar2" style="margin:0; float:left;" data-position="fixed">
     <a onclick="javascript:$.ui.loadContent('#issues-main',false,false,'fade')">杂志<br/><span>issues</span></a>
     <a onclick="javascript:$.ui.loadContent('#library-main',false,false,'fade')">往期<br/><span>library</span></a>
-    <a href="#news-list">资讯<br/><span>news</span></a>
+    <a onclick="javascript:$.ui.loadContent('#news-list',false,false,'fade')">资讯<br/><span>news</span></a>
     <a onclick="javascript:$.ui.loadContent('#activity-list',false,false,'fade')">活动<br/><span>activity</span></a>
     <a onclick="javascript:$.ui.loadContent('#recommend',false,false,'fade')">推荐<br/><span>recommend</span></a>
   </div>
