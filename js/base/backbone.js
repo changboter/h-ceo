@@ -95,7 +95,7 @@ b,c){var d;d=b&&b.hasOwnProperty("constructor")?b.constructor:function(){a.apply
     // if(typeof model.url == "function") model.url = model.url();
     if(typeof model.url != "undefined" && model.url.slice(0, 7) != 'http://')
     {
-      model.url = 'http://api.tiaoloula.com'+ model.url;
+      model.url = 'http://api.yanzhilu.org'+ model.url;
     }
 
     return exports.ajaxSync.apply(this, [method, model, options, error]);
