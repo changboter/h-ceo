@@ -31,7 +31,7 @@ define(function(require, exports, module){
 
       NewsDetail.fetch();
 
-      $("#news-detail-node").html('<div class="current"><p><img src="res/img/loading-a.gif"><span>正在加载中...</span></p></div>');
+      //$("#news-detail-node").html('<div class="current"><p><img src="res/img/loading-a.gif"><span>正在加载中...</span></p></div>');
 
     },
 
@@ -43,6 +43,7 @@ define(function(require, exports, module){
       //console.log(_data);
       var _html = this.NewsDetailTemplate(_data);
 
+      $("#news-detail-node").empty();
       $("#news-detail-node").html(_html);
 
     }

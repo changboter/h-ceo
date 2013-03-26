@@ -69,7 +69,7 @@ define(function(require, exports, module){
     {
       data = list.toJSON();
       data = data[0].body.data;
-      console.log(data.length);
+      //console.log(data.length);
       var _html = this.homeNewsListTemplate({"data": data});
       $("#news-list-node").append(_html);
 
