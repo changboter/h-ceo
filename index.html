@@ -28,23 +28,43 @@
       <p class="text">本应用版权归中国医院院长所有</p>
     </div>
 
-    <div title='中国医院院长－杂志' id="issues-main" class="panel issues-panel" data-footer="navbar2">
+    <div title='中国医院院长－杂志' id="issues-main" class="panel issues-panel" style="overflow: hidden" data-footer="navbar2">
       <header>
         <span class="issues-header-logo"><img src="res/img/header-logo.png"></span>
         <a id='menubadge' onclick="javascript:$.ui.loadContent('#setting')" style='float:right;margin-top:0px' class='menuButton'></a>
       </header>
       <!-- END issues header -->
+      <div id="issues-carousel-box-main">
+        <div  id="issues-carousel-box">
+          <div id="issues-carousel">
 
-      <div class="issues-img">
-        <ul>
-          <li><a href="#issues-list">
-            <img src="res/img/1.jpg">
-            <p><strong>封面文章：打分新医改</strong>
-              <br/>2012年第1期 总12期
-              <br/>出版日期：2012年02月28日
-            </p></a>
-          </li>
-        </ul>
+            <div class="issues-img">
+              <ul>
+                <li><a href="#issues-list">
+                  <img src="res/img/1.jpg">
+                  <p><strong>封面文章：打分新医改</strong>
+                    <br/>2012年第1期 总12期
+                    <br/>出版日期：2012年02月28日
+                  </p></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="issues-img">
+              <ul>
+                <li><a href="#issues-list">
+                  <img src="res/img/1.jpg">
+                  <p><strong>封面文章：打分新医改</strong>
+                    <br/>2012年第1期 总12期
+                    <br/>出版日期：2012年02月28日
+                  </p></a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </div>
     <!-- END 杂志 pannel -->
@@ -1237,6 +1257,7 @@
 </div>
 <script type="text/javascript" charset="utf-8" src="js/jq.mobi.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/jq.ui.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jq.carousel.js"></script>
 <script type="text/javascript" charset="utf-8" src="./init.js"></script>
 
 <!-- 新闻列表界面 -->
@@ -1267,6 +1288,27 @@
   <h1><%= title %></h1>
   <div class="times">来源：<%= source %>   作者：<%= author %>   <%= issue_time %></div>
   <div><%= content %></div>
+</script>
+
+<!-- 封面循环输出 -->
+<script type="text/template" id="tmpl-recommend-list">
+  <div  id="issues-carousel-box">
+    <div id="issues-carousel">
+      <% _.each(data, function(v, k){ %>
+        <div class="issues-img">
+          <ul>
+            <li><a href="#issues-list">
+              <img src="res/img/1.jpg">
+              <p><strong>封面文章：打分新医改</strong>
+                <br/>2012年第1期 总12期
+                <br/>出版日期：2012年02月28日
+              </p></a>
+            </li>
+          </ul>
+        </div>
+      <% }); %>
+    </div>
+  </div>
 </script>
 
 </body>
