@@ -38,7 +38,7 @@ define(function(require, exports, module){
 
       var _html = this.RecommendListTemplate({"data": _data});
 //      console.log(_data);
-      //$("#issues-main").append(_html);
+      $("#issues-main").append(_html);
     },
 
     carousel: function(){
